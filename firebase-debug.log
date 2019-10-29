@@ -1,0 +1,31 @@
+[debug] [2019-10-29T11:14:46.821Z] ----------------------------------------------------------------------
+[debug] [2019-10-29T11:14:46.823Z] Command:       /usr/bin/node /usr/bin/firebase login
+[debug] [2019-10-29T11:14:46.823Z] CLI Version:   7.6.2
+[debug] [2019-10-29T11:14:46.823Z] Platform:      linux
+[debug] [2019-10-29T11:14:46.823Z] Node Version:  v12.13.0
+[debug] [2019-10-29T11:14:46.823Z] Time:          Tue Oct 29 2019 14:14:46 GMT+0300 (East Africa Time)
+[debug] [2019-10-29T11:14:46.823Z] ----------------------------------------------------------------------
+[debug] [2019-10-29T11:14:46.823Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again.
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=1039462913&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2019-10-29T11:18:26.286Z] ----------------------------------------------------------------------
+[debug] [2019-10-29T11:18:26.288Z] Command:       /usr/bin/node /usr/bin/firebase login
+[debug] [2019-10-29T11:18:26.288Z] CLI Version:   7.6.2
+[debug] [2019-10-29T11:18:26.288Z] Platform:      linux
+[debug] [2019-10-29T11:18:26.288Z] Node Version:  v12.13.0
+[debug] [2019-10-29T11:18:26.289Z] Time:          Tue Oct 29 2019 14:18:26 GMT+0300 (East Africa Time)
+[debug] [2019-10-29T11:18:26.289Z] ----------------------------------------------------------------------
+[debug] [2019-10-29T11:18:26.289Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=715818751&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
