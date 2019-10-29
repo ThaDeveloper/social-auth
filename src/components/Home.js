@@ -10,10 +10,12 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import { logoutUser } from "../actions";
+import ProfileCard from './ProfileCard'
 
-const styles = theme => ({
+const styles = () => ({
     root: {
       flexGrow: 1,
+      marginBottom: '5%',
     },
     menuButton: {
       marginRight: "0.5%",
@@ -31,7 +33,9 @@ class Home extends Component {
   render() {
     const { classes } = this.props;
     const { isLoggingOut, logoutError, user } = this.props; 
+    const userInfo = {name: user.displayName, email: user.email, photo: user.photoURL}
     return (
+        <div>
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
@@ -44,10 +48,11 @@ class Home extends Component {
                     <Button color="inherit" onClick={this.handleLogout}>Logout</Button>
                 </Toolbar>
             </AppBar>
-            <h1>Welcome {user.displayName}</h1>
-            {console.log({user})}
-            {isLoggingOut && <p>Logging Out....</p>}
-            {logoutError && <p>Error logging out</p>}
+        </div>
+        <ProfileCard userInfo={userInfo}/>
+        {console.log(user)}
+        {isLoggingOut && <p>Logging Out....</p>}
+        {logoutError && <p>Error logging out</p>}
         </div>
     );
   }
