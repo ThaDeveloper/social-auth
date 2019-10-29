@@ -1,21 +1,39 @@
-import React, { Component } from 'react'
-import firebase from 'firebase'
-import Social from './components/Social'
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import { connect } from "react-redux";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Home from "./components/Home";
+import Login from "./components/Login";
 
-firebase.initializeApp({
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN
-})
+// import firebase from 'firebase'
+// import Social from './components/Social'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Social />
-      </div>
-     
-    )
-  }
+// firebase.initializeApp({
+//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+//   authDomain: process.env.REACT_APP_AUTH_DOMAIN
+// })
+
+function App(props) {
+  const { isAuthenticated, isVerifying } = props;
+  return (
+    <Switch>
+      <ProtectedRoute
+        exact
+        path="/"
+        component={Home}
+        isAuthenticated={isAuthenticated}
+        isVerifying={isVerifying}
+      />
+      <Route path="/login" component={Login} />
+    </Switch>
+  );
 }
 
-export default App
+function mapStateToProps(state) {
+  return {
+    isAuthenticated: state.auth.isAuthenticated,
+    isVerifying: state.auth.isVerifying
+  };
+}
+export default connect(mapStateToProps)(App);
+
