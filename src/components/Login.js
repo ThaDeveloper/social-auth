@@ -12,6 +12,8 @@ import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import Container from "@material-ui/core/Container";
 
+import Social from './Social';
+
 const styles = () => ({
   "@global": {
     body: {
@@ -106,6 +108,9 @@ class Login extends Component {
             >
               Sign In
             </Button>
+            <hr />
+            OR
+            <Social />
           </Paper>
         </Container>
       );

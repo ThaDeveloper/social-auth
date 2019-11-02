@@ -5,13 +5,6 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./components/Home";
 import Login from "./components/Login";
 
-// import firebase from 'firebase'
-// import Social from './components/Social'
-
-// firebase.initializeApp({
-//   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-//   authDomain: process.env.REACT_APP_AUTH_DOMAIN
-// })
 
 function App(props) {
   const { isAuthenticated, isVerifying } = props;
